@@ -1,0 +1,8 @@
+tests/test_flota.py::test_validar_detecta_errores PASSED                 [ 16%]
+tests/test_flota.py::test_combine_calcula_promedio_y_maxima PASSED       [ 33%]
+tests/test_flota.py::test_invalidos_van_a_otra_salida PASSED             [ 50%]
+tests/test_flota.py::test_duplicado_no_cambia_el_promedio_y_ventana_por_event_time PASSED [ 66%]
+tests/test_flota.py::test_tardio_dentro_de_la_lateness_corrige_el_resultado PASSED [ 83%]
+tests/test_flota.py::test_demasiado_tardio_se_descarta PASSED            [100%]
+======================== 6 passed, 1 warning in 14.64s =========================
+All checks passed!

@@ -1,0 +1,7 @@
+flota.invalidos:0:2
+flota.metricas:0:22
+flota.metricas:1:8
+flota.metricas:2:12
+flota.ubicaciones:0:74
+flota.ubicaciones:1:74
+flota.ubicaciones:2:37

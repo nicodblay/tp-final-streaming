@@ -1,0 +1,33 @@
+Mensajes leídos de flota.metricas: 42 (panes)
+Filas después del upsert (moto x ventana): 21
+moto     ventana                pings prom km/h pane tipo
+VH-004   2026-11-22T23:43:00Z       1     140.0    0 UNKNOWN
+VH-001   2026-11-22T23:47:00Z       6      37.9    0 UNKNOWN
+VH-002   2026-11-22T23:47:00Z       7     23.46    0 UNKNOWN
+VH-003   2026-11-22T23:47:00Z       7     29.86    0 UNKNOWN
+VH-004   2026-11-22T23:47:00Z       6     23.22    0 UNKNOWN
+VH-005   2026-11-22T23:47:00Z       6     35.12    0 UNKNOWN
+VH-001   2026-11-22T23:48:00Z      12     37.12    0 UNKNOWN
+VH-002   2026-11-22T23:48:00Z      12     21.55    0 UNKNOWN
+VH-003   2026-11-22T23:48:00Z      12     22.12    0 UNKNOWN
+VH-004   2026-11-22T23:48:00Z      12      10.0    0 UNKNOWN
+VH-005   2026-11-22T23:48:00Z      12     35.61    0 UNKNOWN
+VH-001   2026-11-22T23:49:00Z      12     37.23    0 UNKNOWN
+VH-002   2026-11-22T23:49:00Z      12     21.58    0 UNKNOWN
+VH-003   2026-11-22T23:49:00Z      12     35.58    0 UNKNOWN
+VH-004   2026-11-22T23:49:00Z      12     18.23    0 UNKNOWN
+VH-005   2026-11-22T23:49:00Z      12     30.72    0 UNKNOWN
+VH-001   2026-11-22T23:50:00Z       6     50.27    0 UNKNOWN
+VH-002   2026-11-22T23:50:00Z       6     14.67    0 UNKNOWN
+VH-003   2026-11-22T23:50:00Z       6     27.62    0 UNKNOWN
+VH-004   2026-11-22T23:50:00Z       6     19.88    0 UNKNOWN
+VH-005   2026-11-22T23:50:00Z       6     24.62    0 UNKNOWN
+Mensajes en flota.invalidos: 2
+Verificación de los casos especiales:
+  [OK] duplicado VH-001-000006: la ventana VH-001|2026-11-22T23:48:00Z tiene 12 pings, se esperaban 12 (contándolo una sola vez)
+  [OK] desordenado VH-002-desordenado: incluido en su ventana VH-002|2026-11-22T23:47:00Z (pings 7 = 7, último pane UNKNOWN)
+  [OK] tardio VH-003-tardio: incluido en su ventana VH-003|2026-11-22T23:47:00Z (pings 7 = 7, último pane UNKNOWN)
+  [OK] inválido VH-005-invalido: está en flota.invalidos
+  [OK] ventanas que coinciden con lo enviado: 21/21
+  [AVISO] demasiado tardío: la ventana VH-004|2026-11-22T23:43:00Z aparece porque en lectura acotada el watermark no avanza (como en batch). El descarte se prueba con TestStream: test_demasiado_tardio_se_descarta
+Resultado: TODO OK
